@@ -4,7 +4,7 @@
 
 The CTF competition arranged for the d:hack 2023 hackathon at DIPS AS.
 
-Challenges designed by @raymonshansen, @olivernilssen, @orjanj and @jaalu.
+Challenges designed by [@raymonshansen](https://github.com/raymonshansen/), [@olivernilssen](https://github.com/olivernilssen), [@orjanj](https://github.com/orjanj) and [@jaalu](https://github.com/jaalu).
 
 ## Setup
 
