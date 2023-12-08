@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<!-- IT Works -->
+<html>
+
+<head>
+	<title>IT Works</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}">
+	<noscript>
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper-->
+	<div id="wrapper">
+
+		<!-- Nav -->
+		<nav id="nav">
+			<a href="#" class="icon solid fa-home"><span>Home</span></a>
+			<a href="#us" class="icon solid fa-users"><span>Us</span></a>
+			<a href="#login" class="icon solid fa-door-open"><span>Login</span></a>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Us, the IT Works company -->
+			<article id="home" class="panel intro">
+				<header>
+					<h1>IT Works</h1>
+					<p>Where IT works</p>
+				</header>
+				<a href="#us" class="jumplink pic">
+					<span class="arrow icon solid fa-chevron-right"><span>Who are we</span></span>
+					<img src="{{ url_for('static', filename='images/itworks.png') }}" alt="" />
+				</a>
+			</article>
+
+			<!-- Us -->
+			<article id="us" class="panel">
+				<header>
+					<h2>IT Works</h2>
+				</header>
+				<p>
+					At IT Works, we are not just another IT company; we are the pioneers of the next-gen tech
+					revolution. Leveraging cutting-edge technologies, we synergize quantum computing, artificial
+					intelligence, and blockchain to redefine the very fabric of digital innovation.
+				</p>
+				<p>
+					Security is at our core! With state-of-the-art cybersecurity protocols, we ensure your data is
+					fortified against the ever-evolving threat landscape. Our robust encryption algorithms and
+					blockchain-based solutions guarantee a fortress-like protection for your digital <A style="all:unset" href="/secret.html">secrets.</A>
+				</p>
+				<p>
+					We used to have 7 employees, but 6 was a better fit for this web-page.
+				</p>
+				
+				<section>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img
+									src="{{ url_for('static', filename='images/employee_01.png') }}" alt="employee_01"></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img
+									src="{{ url_for('static', filename='images/employee_02.png') }}" alt="employee_02"></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img
+									src="{{ url_for('static', filename='images/employee_03.png') }}" alt="employee_03"></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img
+									src="{{ url_for('static', filename='images/employee_04.png') }}" alt="employee_04"></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img
+									src="{{ url_for('static', filename='images/employee_05.png') }}" alt="employee_05"></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="/special/employee_06.jpg" class="image fit"><img
+									src="/special/employee_06.jpg" alt="employee_06" title="Header of Security"></a>
+						</div>
+						<!--
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img
+									src="{{ url_for('static', filename='images/employee_07.png') }}" alt="employee_07"></a>
+						</div>
+						-->
+					</div>
+				</section>
+			</article>
+
+			<!-- Login -->
+			<article id="login" class="panel">
+				<header>
+					<h2>Login</h2>
+				</header>
+				<form action="/login" method="post">
+					<div>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<div>
+									<label for="usr">User name</label>
+									<input id="usr" type="text" name="username" />
+								</div>
+							</div>
+							<!-- TODO: Is the admin123 password still active? -->
+							<div class="col-6 col-12-medium">
+								<div>
+									<label for="pswd">Password</label>
+									<input id="pswd" type="password" name="password" />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6 col-12-small">
+								<input id="login_button" type="submit" value="Log in" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<div id="footer">
+			<ul class="copyright">
+				<li>&copy; IT Works</li>
+				<li>Design: Razzle Dazzle</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+</body>
+
+</html>

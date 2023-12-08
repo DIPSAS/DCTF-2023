@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  misc1:
+    build: "Misc/Clicker Marathon"
+    ports:
+      - "9990:80"
+  web:
+    build: "Web/ITWorks/src"
+    ports:
+      - "9991:80"
+  pwn1:
+    build: "Pwn/Vroom"
+    ports:
+      - "9992:80"
+  pwn2:
+    build: "Pwn/Selenium Fever/src"
+    ports:
+      - "9993:80"
+  pwn3:
+    build: "Pwn/Feedback Appreciated/src"
+    ports:
+      - "9994:80"
+  # # This challenge is resource-intensive
+  # pwn4:
+  #   build: "Pwn/Next Generation Calculator/src"
+  #   ports:
+  #     - "9995:80"
